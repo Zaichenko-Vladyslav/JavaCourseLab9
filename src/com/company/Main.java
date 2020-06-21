@@ -156,7 +156,7 @@ public class Main {
 
         // Inserting 1000 new elements on the middle ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.add(integersArray.size()/2 + 500 ,i);
+            integersArray.add(51000 + i ,i);
         }
 
         /*
@@ -179,7 +179,7 @@ public class Main {
 
         // Inserting 1000 new elements on the middle LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.add(integersLinked.size()/2 + 500,i);
+            integersLinked.add(51000 + i,i);
         }
 
         /*
@@ -260,7 +260,7 @@ public class Main {
 
         // Updating 1000 new elements on the end ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(i,i);
+            integersArray.set(i,i + 1000);
         }
 
         /*
@@ -283,7 +283,7 @@ public class Main {
 
         // Updating 1000 new elements on the begin LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(i,i);
+            integersLinked.set(i,i + 1000);
         }
 
         /*
@@ -312,7 +312,7 @@ public class Main {
 
         // Updating 1000 new elements on the middle ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(integersArray.size()/2 + 500,i);
+            integersArray.set(51000 + i,i + 1000);
         }
 
         /*
@@ -335,7 +335,7 @@ public class Main {
 
         // Updating 1000 new elements on the middle LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(integersLinked.size()/2 + 500,i);
+            integersLinked.set(51000 + i,i + 1000);
         }
 
         /*
@@ -364,7 +364,7 @@ public class Main {
 
         // Updating 1000 new elements on the end ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(integersArray.size()-1000+ i,i);
+            integersArray.set(integersArray.size()- 1000 + i,i + 1000);
         }
 
         /*
@@ -387,7 +387,7 @@ public class Main {
 
         // Updating 1000 new elements on the end LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(integersLinked.size()-1000+ i,i);
+            integersLinked.set(integersLinked.size()- 1000 + i,i + 1000);
         }
 
         /*
@@ -520,7 +520,7 @@ public class Main {
 
         // Deleting 1000 new elements on the end ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.remove(integersArray.size()-1000+ i);
+            integersArray.remove(integersArray.size() - 1000 + i);
         }
 
         /*
@@ -543,7 +543,7 @@ public class Main {
 
         // Deleting 1000 new elements on the end LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.remove(integersLinked.size()-1000+ i);
+            integersLinked.remove(integersLinked.size()- 1000 + i);
         }
 
         /*
