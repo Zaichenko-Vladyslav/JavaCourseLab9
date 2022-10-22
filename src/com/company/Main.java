@@ -12,14 +12,14 @@
  * 1. Create ArrayList and LinkedList containing
  * 100 000 Integer elements. Compare time intervals.
  *
- * 2. Insert  new 1000 elements  on the  beginning, on
- * the middle  and on the end of ones. Compare time intervals.
+ * 2. Insert  new 1000 elements on the beginning, on
+ * the middle, and on the end. Compare time intervals.
  *
- * 3. Update 1000 elements  from the  beginning, from  the middle
- * and from the end of ones. Compare time intervals.
+ * 3. Update 1000 elements from the beginning, from the middle
+ * and from the end. Compare time intervals.
  *
- * 4. Delete 1000 elements  from the  beginning, from  the middle
- * and from the end of ones. Compare time intervals.
+ * 4. Delete 1000 elements from the beginning, from the middle
+ * and from the end. Compare time intervals.
  *
  */
 
@@ -80,7 +80,7 @@ public class Main {
         }
 
         /*
-         * @param startCreationLinkedList return time finish
+         * @param finishCreationLinkedList return time finish
          * initialization LinkedList with 100 000 elements
          */
         LocalDateTime finishCreationLinkedList = LocalDateTime.now();
@@ -90,517 +90,478 @@ public class Main {
                 + ChronoUnit.MILLIS.between(startCreationLinkedList,
                 finishCreationLinkedList) + " Milliseconds");
 
-
-
         System.out.println
-                ("\n----- Inserting new 1000 elements on the begin -----");
-
+                ("\n----- Inserting new 1000 elements on the beginning -----");
 
         /*
-         * @param startInsertInBeginArrayList return time start
-         * inserting 1000 elements on the beginning ArrayList
+         * @param startInsertInBeginningOfArrayList return time start
+         * inserting 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime startInsertInBeginArrayList = LocalDateTime.now();
+        LocalDateTime startInsertInBeginningOfArrayList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the beginning ArrayList
+        // Inserting 1000 new elements on the beginning of ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.add(i,i);
+            integersArray.add(i, i);
         }
 
         /*
-         * @param finishInsertInBeginArrayList return time start
-         * inserting 1000 elements on the beginning ArrayList
+         * @param finishInsertInBeginningOfArrayList return time start
+         * inserting 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime finishInsertInBeginArrayList = LocalDateTime.now();
+        LocalDateTime finishInsertInBeginningOfArrayList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the beginning ArrayList
-        System.out.println
-                ("Insert 1000 new elements on the beginning ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInBeginArrayList,
-                        finishInsertInBeginArrayList) + " Milliseconds");
+        // return time inserting 1000 elements on the beginning of ArrayList
+        System.out.println("Insert 1000 new elements on the beginning of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInBeginningOfArrayList,
+                        finishInsertInBeginningOfArrayList) + " Milliseconds");
 
         /*
-         * @param startInsertInBeginLinkedList return time start
-         * inserting 1000 elements on the beginning LinkedList
+         * @param startInsertInBeginningOfLinkedList return time start
+         * inserting 1000 elements on the beginning of LinkedList
          */
-        LocalDateTime startInsertInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime startInsertInBeginningOfLinkedList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the beginning LinkedList
+        // Inserting 1000 new elements on the beginning of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.add(i,i);
+            integersLinked.add(i, i);
         }
 
         /*
-         * @param finishInsertInBeginLinkedList return time finish
-         * inserting 1000 elements on the beginning LinkedList
+         * @param finishInsertInBeginningOfLinkedList return time finish
+         * inserting 1000 elements on the beginning of LinkedList
          */
-        LocalDateTime finishInsertInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime finishInsertInBeginningOfLinkedList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the beginning LinkedList
-        System.out.println
-                ("Insert 1000 new elements on the beginning LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInBeginLinkedList,
-                        finishInsertInBeginLinkedList) + " Milliseconds");
-
-
+        // return time inserting 1000 elements on the beginning of LinkedList
+        System.out.println("Insert 1000 new elements on the beginning of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInBeginningOfLinkedList,
+                        finishInsertInBeginningOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n----- Inserting new 1000 elements on the middle -----");
 
-
         /*
-         * @param startInsertInMiddleArrayList return time start
-         * inserting 1000 elements on the middle ArrayList
+         * @param startInsertInMiddleOfArrayList return time start
+         * inserting 1000 elements on the middle of ArrayList
          */
-        LocalDateTime startInsertInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime startInsertInMiddleOfArrayList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the middle ArrayList
+        // Inserting 1000 new elements on the middle of ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.add(51000 + i ,i);
+            integersArray.add(51000 + i, i);
         }
 
         /*
-         * @param finishInsertInMiddleArrayList return time start
-         * inserting 1000 elements on the middle ArrayList
+         * @param finishInsertInMiddleOfArrayList return time start
+         * inserting 1000 elements on the middle of ArrayList
          */
-        LocalDateTime finishInsertInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime finishInsertInMiddleOfArrayList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the beginning ArrayList
+        // return time inserting 1000 elements on the beginning of ArrayList
         System.out.println
-                ("Insert 1000 new elements on the middle ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInMiddleArrayList,
-                        finishInsertInMiddleArrayList) + " Milliseconds");
+                ("Insert 1000 new elements on the middle of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInMiddleOfArrayList,
+                        finishInsertInMiddleOfArrayList) + " Milliseconds");
 
         /*
          * @param startInsertInMiddleLinkedList return time start
-         * inserting 1000 elements on the middle LinkedList
+         * inserting 1000 elements on the middle of LinkedList
          */
-        LocalDateTime startInsertInMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime startInsertInMiddleOfLinkedList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the middle LinkedList
+        // Inserting 1000 new elements on the middle of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.add(51000 + i,i);
+            integersLinked.add(51000 + i, i);
         }
 
         /*
-         * @param finishInsertInMiddleLinkedList return time finish
-         * inserting 1000 elements on the Middle LinkedList
+         * @param finishInsertInMiddleOfLinkedList return time finish
+         * inserting 1000 elements on the middle of LinkedList
          */
-        LocalDateTime finishInsertInMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime finishInsertInMiddleOfLinkedList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the middle LinkedList
-        System.out.println
-                ("Insert 1000 new elements on the middle LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInMiddleLinkedList,
-                        finishInsertInMiddleLinkedList) + " Milliseconds");
-
-
+        // return time inserting 1000 elements on the middle of LinkedList
+        System.out.println("Insert 1000 new elements on the middle of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInMiddleOfLinkedList,
+                        finishInsertInMiddleOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n------- Inserting new 1000 elements on the end -------");
 
-
         /*
-         * @param startInsertInEndArrayList return time start
-         * inserting 1000 elements on the end ArrayList
+         * @param startInsertInEndOfArrayList return time start
+         * inserting 1000 elements on the end of ArrayList
          */
-        LocalDateTime startInsertInEndArrayList = LocalDateTime.now();
+        LocalDateTime startInsertInEndOfArrayList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the end ArrayList
+        // Inserting 1000 new elements on the end of ArrayList
         for (int i = 0; i < 1000; i++) {
             integersArray.add(i);
         }
 
         /*
-         * @param finishInsertInEndArrayList return time start
-         * inserting 1000 elements on the end ArrayList
+         * @param finishInsertInEndOfArrayList return time start
+         * inserting 1000 elements on the end of ArrayList
          */
-        LocalDateTime finishInsertInEndArrayList = LocalDateTime.now();
+        LocalDateTime finishInsertInEndOfArrayList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the end ArrayList
+        // return time inserting 1000 elements on the end of ArrayList
         System.out.println
-                ("Insert 1000 new elements on the end ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInEndArrayList,
-                        finishInsertInEndArrayList) + " Milliseconds");
+                ("Insert 1000 new elements on the end of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInEndOfArrayList,
+                        finishInsertInEndOfArrayList) + " Milliseconds");
 
         /*
-         * @param startInsertInEndLinkedList return time start
-         * inserting 1000 elements on the end LinkedList
+         * @param startInsertInEndOfLinkedList return time start
+         * inserting 1000 elements on the end of LinkedList
          */
-        LocalDateTime startInsertInEndLinkedList = LocalDateTime.now();
+        LocalDateTime startInsertInEndOfLinkedList = LocalDateTime.now();
 
-        // Inserting 1000 new elements on the end LinkedList
+        // Inserting 1000 new elements on the end of LinkedList
         for (int i = 0; i < 1000; i++) {
             integersLinked.add(i);
         }
 
         /*
-         * @param finishInsertInEndLinkedList return time finish
-         * inserting 1000 elements on the end LinkedList
+         * @param finishInsertInEndOfLinkedList return time finish
+         * inserting 1000 elements on the end of LinkedList
          */
-        LocalDateTime finishInsertInEndLinkedList = LocalDateTime.now();
+        LocalDateTime finishInsertInEndOfLinkedList = LocalDateTime.now();
 
-        // return time inserting 1000 elements on the end LinkedList
-        System.out.println
-                ("Insert 1000 new elements on the end LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startInsertInEndLinkedList,
-                        finishInsertInEndLinkedList) + " Milliseconds");
-
-
+        // return time inserting 1000 elements on the end of LinkedList
+        System.out.println("Insert 1000 new elements on the end of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startInsertInEndOfLinkedList,
+                        finishInsertInEndOfLinkedList) + " Milliseconds");
 
         System.out.println
-                ("\n------- Updating new 1000 elements on the begin -------");
-
+                ("\n------- Updating new 1000 elements on the beginning -------");
 
         /*
-         * @param startUpdateInBeginArrayList return time start
-         * updating 1000 elements on the beginning ArrayList
+         * @param startUpdateInBeginningOfArrayList return time start
+         * updating 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime startUpdateInBeginArrayList = LocalDateTime.now();
+        LocalDateTime startUpdateInBeginningOfArrayList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the end ArrayList
+        // Updating 1000 new elements on the end of ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(i,i + 1000);
+            integersArray.set(i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInBeginArrayList return time start
-         * updating 1000 elements on the begin ArrayList
+         * @param finishUpdateInBeginningOfArrayList return time start
+         * updating 1000 elements on the begin of ArrayList
          */
-        LocalDateTime finishUpdateBeginArrayList = LocalDateTime.now();
+        LocalDateTime finishUpdateBeginningOfArrayList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the begin ArrayList
-        System.out.println
-                ("Update 1000 new elements on the begin ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInBeginArrayList,
-                        finishUpdateBeginArrayList) + " Milliseconds");
+        // return time updating 1000 elements on the beginning of ArrayList
+        System.out.println("Update 1000 new elements on the beginning of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInBeginningOfArrayList,
+                        finishUpdateBeginningOfArrayList) + " Milliseconds");
 
         /*
-         * @param startUpdateInBeginLinkedList return time start
-         * updating 1000 elements on the begin ArrayList
+         * @param startUpdateInBeginningOfLinkedList return time start
+         * updating 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime startUpdateInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime startUpdateInBeginningOfLinkedList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the begin LinkedList
+        // Updating 1000 new elements on the beginning of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(i,i + 1000);
+            integersLinked.set(i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInBeginLinkedList return time start
-         * updating 1000 elements on the begin LinkedList
+         * @param finishUpdateInBeginningOfLinkedList return time start
+         * updating 1000 elements on the beginning of LinkedList
          */
-        LocalDateTime finishUpdateInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime finishUpdateInBeginningOfLinkedList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the middle LinkedList
-        System.out.println
-                ("Update 1000 new elements on the begin LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInBeginLinkedList,
-                        finishUpdateInBeginLinkedList) + " Milliseconds");
-
-
+        // return time updating 1000 elements on the middle of LinkedList
+        System.out.println("Update 1000 new elements on the beginning of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInBeginningOfLinkedList,
+                        finishUpdateInBeginningOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n------- Updating new 1000 elements on the middle -------");
 
-
         /*
-         * @param startUpdateInMiddleArrayList return time start
-         * updating 1000 elements on the middle ArrayList
+         * @param startUpdateInMiddleOfArrayList return time start
+         * updating 1000 elements on the middle of ArrayList
          */
-        LocalDateTime startUpdateInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime startUpdateInMiddleOfArrayList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the middle ArrayList
+        // Updating 1000 new elements on the middle of ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(51000 + i,i + 1000);
+            integersArray.set(51000 + i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInMiddleArrayList return time start
-         * updating 1000 elements on the middle ArrayList
+         * @param finishUpdateInMiddleOfArrayList return time start
+         * updating 1000 elements on the middle of ArrayList
          */
-        LocalDateTime finishUpdateInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime finishUpdateInMiddleOfArrayList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the middle ArrayList
-        System.out.println
-                ("Update 1000 new elements on the middle ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInMiddleArrayList,
-                        finishUpdateInMiddleArrayList) + " Milliseconds");
+        // return time updating 1000 elements on the middle of ArrayList
+        System.out.println("Update 1000 new elements on the middle of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInMiddleOfArrayList,
+                        finishUpdateInMiddleOfArrayList) + " Milliseconds");
 
         /*
-         * @param startUpdateInMiddleLinkedList return time start
-         * updating 1000 elements on the middle LinkedList
+         * @param startUpdateInMiddleOfLinkedList return time start
+         * updating 1000 elements on the middle of LinkedList
          */
-        LocalDateTime startUpdateInMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime startUpdateInMiddleOfLinkedList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the middle LinkedList
+        // Updating 1000 new elements on the middle of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(51000 + i,i + 1000);
+            integersLinked.set(51000 + i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInMiddleLinkedList return time finish
-         * updating 1000 elements on the middle LinkedList
+         * @param finishUpdateInMiddleOfLinkedList return time finish
+         * updating 1000 elements on the middle of LinkedList
          */
-        LocalDateTime finishUpdateInMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime finishUpdateInMiddleOfLinkedList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the middle LinkedList
-        System.out.println
-                ("Update 1000 new elements on the middle LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInMiddleLinkedList,
-                        finishUpdateInMiddleLinkedList) + " Milliseconds");
-
-
+        // return time updating 1000 elements on the middle of LinkedList
+        System.out.println("Update 1000 new elements on the middle of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInMiddleOfLinkedList,
+                        finishUpdateInMiddleOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n------- Updating new 1000 elements on the end -------");
 
-
         /*
-         * @param startUpdateInEndArrayList return time start
-         * updating 1000 elements on the end ArrayList
+         * @param startUpdateInEndOfArrayList return time start
+         * updating 1000 elements on the end of ArrayList
          */
-        LocalDateTime startUpdateInEndArrayList = LocalDateTime.now();
+        LocalDateTime startUpdateInEndOfArrayList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the end ArrayList
+        // Updating 1000 new elements on the end of ArrayList
         for (int i = 0; i < 1000; i++) {
-            integersArray.set(integersArray.size()- 1000 + i,i + 1000);
+            integersArray.set(integersArray.size() - 1000 + i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInEndArrayList return time finish
-         * updating 1000 elements on the end ArrayList
+         * @param finishUpdateInEndOfArrayList return time finish
+         * updating 1000 elements on the end of ArrayList
          */
-        LocalDateTime finishUpdateInEndArrayList = LocalDateTime.now();
+        LocalDateTime finishUpdateInEndOfArrayList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the end LinkedList
-        System.out.println
-                ("Update 1000 new elements on the end ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInEndArrayList,
-                        finishUpdateInEndArrayList) + " Milliseconds");
+        // return time updating 1000 elements on the end of LinkedList
+        System.out.println("Update 1000 new elements on the end of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInEndOfArrayList,
+                        finishUpdateInEndOfArrayList) + " Milliseconds");
 
         /*
-         * @param startUpdateInEndLinkedList return time start
-         * updating 1000 elements on the end LinkedList
+         * @param startUpdateInEndOfLinkedList return time start
+         * updating 1000 elements on the end of LinkedList
          */
-        LocalDateTime startUpdateInEndLinkedList = LocalDateTime.now();
+        LocalDateTime startUpdateInEndOfLinkedList = LocalDateTime.now();
 
-        // Updating 1000 new elements on the end LinkedList
+        // Updating 1000 new elements on the end of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.set(integersLinked.size()- 1000 + i,i + 1000);
+            integersLinked.set(integersLinked.size() - 1000 + i, i + 1000);
         }
 
         /*
-         * @param finishUpdateInEndLinkedList return time finish
-         * updating 1000 elements on the end LinkedList
+         * @param finishUpdateInEndOfLinkedList return time finish
+         * updating 1000 elements on the end of LinkedList
          */
-        LocalDateTime finishUpdateInEndLinkedList = LocalDateTime.now();
+        LocalDateTime finishUpdateInEndOfLinkedList = LocalDateTime.now();
 
-        // return time updating 1000 elements on the end LinkedList
-        System.out.println
-                ("Update 1000 new elements on the end LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startUpdateInEndLinkedList,
-                finishUpdateInEndLinkedList) + " Milliseconds");
-
-
+        // return time updating 1000 elements on the end of LinkedList
+        System.out.println("Update 1000 new elements on the end of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startUpdateInEndOfLinkedList,
+                finishUpdateInEndOfLinkedList) + " Milliseconds");
 
         System.out.println
-                ("\n------- Deleting new 1000 elements on the begin -------");
-
+                ("\n------- Deleting new 1000 elements on the beginning -------");
 
         /*
-         * @param startDeleteInBeginArrayList return time start
-         * deleting 1000 elements on the beginning ArrayList
+         * @param startDeleteInBeginningOfArrayList return time start
+         * deleting 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime startDeleteInBeginArrayList = LocalDateTime.now();
+        LocalDateTime startDeleteInBeginningOfArrayList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the begin ArrayList
+        // Deleting 1000 new elements on the beginning of ArrayList
         for (int i = 0; i < 1000; i++) {
             integersArray.remove(i);
         }
 
         /*
-         * @param finishDeleteInBeginArrayList return time finish
-         * deleting 1000 elements on the begin ArrayList
+         * @param finishDeleteInBeginningOfArrayList return time finish
+         * deleting 1000 elements on the beginning of ArrayList
          */
-        LocalDateTime finishDeleteInBeginArrayList = LocalDateTime.now();
+        LocalDateTime finishDeleteInBeginningOfArrayList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the begin ArrayList
-        System.out.println
-                ("Delete 1000 new elements on the begin ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteInBeginArrayList,
-                        finishDeleteInBeginArrayList) + " Milliseconds");
+        // return time deleting 1000 elements on the beginning of ArrayList
+        System.out.println("Delete 1000 new elements on the beginning of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteInBeginningOfArrayList,
+                        finishDeleteInBeginningOfArrayList) + " Milliseconds");
 
         /*
-         * @param startDeleteInBeginLinkedList return time start
-         * deleting 1000 elements on the beginning LinkedList
+         * @param startDeleteInBeginningOfLinkedList return time start
+         * deleting 1000 elements on the beginning of LinkedList
          */
-        LocalDateTime startDeleteInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime startDeleteInBeginningOfLinkedList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the begin LinkedList
+        // Deleting 1000 new elements on the beginning of LinkedList
         for (int i = 0; i < 1000; i++) {
             integersLinked.remove(i);
         }
 
         /*
-         * @param finishDeleteInBeginLinkedList return time finish
-         * deleting 1000 elements on the begin LinkedList
+         * @param finishDeleteInBeginningOfLinkedList return time finish
+         * deleting 1000 elements on the beginning of LinkedList
          */
-        LocalDateTime finishDeleteInBeginLinkedList = LocalDateTime.now();
+        LocalDateTime finishDeleteInBeginningOfLinkedList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the begin LinkedList
+        // return time deleting 1000 elements on the beginning of LinkedList
         System.out.println
-                ("Delete 1000 new elements on the begin LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteInBeginLinkedList,
-                finishDeleteInBeginLinkedList) + " Milliseconds");
-
-
+                ("Delete 1000 new elements on the beginning of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteInBeginningOfLinkedList,
+                finishDeleteInBeginningOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n------- Deleting new 1000 elements on the middle -------");
 
-
         /*
-         * @param startDeleteInMiddleArrayList return time start
-         * deleting 1000 elements on the middle ArrayList
+         * @param startDeleteInMiddleOfArrayList return time start
+         * deleting 1000 elements on the middle of ArrayList
          */
-        LocalDateTime startDeleteInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime startDeleteInMiddleOfArrayList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the middle ArrayList
+        // Deleting 1000 new elements on the middle of ArrayList
         for (int i = 0; i < 1000; i++) {
             integersArray.remove(50000 + i);
         }
 
         /*
-         * @param finishDeleteInMiddleArrayList return time finish
-         * deleting 1000 elements on the middle ArrayList
+         * @param finishDeleteInMiddleOfArrayList return time finish
+         * deleting 1000 elements on the middle of ArrayList
          */
-        LocalDateTime finishDeleteInMiddleArrayList = LocalDateTime.now();
+        LocalDateTime finishDeleteInMiddleOfArrayList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the middle ArrayList
-        System.out.println
-                ("Delete 1000 new elements on the middle ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteInMiddleArrayList,
-                        finishDeleteInMiddleArrayList) + " Milliseconds");
+        // return time deleting 1000 elements on the middle of ArrayList
+        System.out.println("Delete 1000 new elements on the middle of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteInMiddleOfArrayList,
+                        finishDeleteInMiddleOfArrayList) + " Milliseconds");
 
         /*
-         * @param startDeleteInMiddleLinkedList return time start
-         * deleting 1000 elements on the middle LinkedList
+         * @param startDeleteInMiddleOfLinkedList return time start
+         * deleting 1000 elements on the middle of LinkedList
          */
-        LocalDateTime startDeleteMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime startDeleteMiddleOfLinkedList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the middle LinkedList
+        // Deleting 1000 new elements on the middle of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.remove(50000+ i);
+            integersLinked.remove(50000 + i);
         }
 
         /*
-         * @param finishDeleteInMiddleLinkedList return time finish
-         * deleting 1000 elements on the middle LinkedList
+         * @param finishDeleteInMiddleOfLinkedList return time finish
+         * deleting 1000 elements on the middle of LinkedList
          */
-        LocalDateTime finishDeleteInMiddleLinkedList = LocalDateTime.now();
+        LocalDateTime finishDeleteInMiddleOfLinkedList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the middle LinkedList
+        // return time deleting 1000 elements on the middle of LinkedList
         System.out.println
-                ("Delete 1000 new elements on the middle LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteMiddleLinkedList,
-                        finishDeleteInMiddleLinkedList) + " Milliseconds");
-
-
+                ("Delete 1000 new elements on the middle of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteMiddleOfLinkedList,
+                        finishDeleteInMiddleOfLinkedList) + " Milliseconds");
 
         System.out.println
                 ("\n------- Deleting new 1000 elements on the end -------");
 
-
         /*
-         * @param startDeleteInEndArrayList return time start
-         * deleting 1000 elements on the end ArrayList
+         * @param startDeleteInEndOfArrayList return time start
+         * deleting 1000 elements on the end of ArrayList
          */
-        LocalDateTime startDeleteInEndArrayList = LocalDateTime.now();
+        LocalDateTime startDeleteInEndOfArrayList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the end ArrayList
+        // Deleting 1000 new elements on the end of ArrayList
         for (int i = 0; i < 1000; i++) {
             integersArray.remove(integersArray.size() - 1000 + i);
         }
 
         /*
-         * @param finishDeleteInEndArrayList return time finish
-         * deleting 1000 elements on the end ArrayList
+         * @param finishDeleteInEndOfArrayList return time finish
+         * deleting 1000 elements on the end of ArrayList
          */
-        LocalDateTime finishDeleteEndArrayList = LocalDateTime.now();
+        LocalDateTime finishDeleteEndOfArrayList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the end ArrayList
+        // return time deleting 1000 elements on the end of ArrayList
         System.out.println
-                ("Delete 1000 new elements on the end ArrayList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteInEndArrayList,
-                        finishDeleteEndArrayList) + " Milliseconds");
+                ("Delete 1000 new elements on the end of ArrayList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteInEndOfArrayList,
+                        finishDeleteEndOfArrayList) + " Milliseconds");
 
         /*
-         * @param startDeleteInEndLinkedList return time start
-         * deleting 1000 elements on the end LinkedList
+         * @param startDeleteInEndOfLinkedList return time start
+         * deleting 1000 elements on the end of LinkedList
          */
-        LocalDateTime startDeleteInEndLinkedList = LocalDateTime.now();
+        LocalDateTime startDeleteInEndOfLinkedList = LocalDateTime.now();
 
-        // Deleting 1000 new elements on the end LinkedList
+        // Deleting 1000 new elements on the end of LinkedList
         for (int i = 0; i < 1000; i++) {
-            integersLinked.remove(integersLinked.size()- 1000 + i);
+            integersLinked.remove(integersLinked.size() - 1000 + i);
         }
 
         /*
-         * @param finishDeleteInEndLinkedList return time finish
-         * deleting 1000 elements on the end LinkedList
+         * @param finishDeleteInEndOfLinkedList return time finish
+         * deleting 1000 elements on the end of LinkedList
          */
-        LocalDateTime finishDeleteInEndLinkedList = LocalDateTime.now();
+        LocalDateTime finishDeleteInEndOfLinkedList = LocalDateTime.now();
 
-        // return time deleting 1000 elements on the middle LinkedList
+        // return time deleting 1000 elements on the middle of LinkedList
         System.out.println
-                ("Delete 1000 new elements on the end LinkedList needs: "
-                + ChronoUnit.MILLIS.between(startDeleteInEndLinkedList,
-                finishDeleteInEndLinkedList) + " Milliseconds");
+                ("Delete 1000 new elements on the end of LinkedList needs: "
+                + ChronoUnit.MILLIS.between(startDeleteInEndOfLinkedList,
+                finishDeleteInEndOfLinkedList) + " Milliseconds");
 
         //-------------------------MyOutput---------------------------
 
         /*
 
-        -------------- Lists Initializations --------------
-        Initialization ArrayList needs: 17 Milliseconds
-        Initialization LinkedList needs: 66 Milliseconds
+                -------------- Lists Initializations --------------
+        Initialization ArrayList needs: 52 Milliseconds
+        Initialization LinkedList needs: 78 Milliseconds
 
-        ----- Inserting new 1000 elements on the begin -----
-        Insert 1000 new elements on the beginning ArrayList needs: 35 Milliseconds
-        Insert 1000 new elements on the beginning LinkedList needs: 17 Milliseconds
+        ----- Inserting new 1000 elements on the beginning -----
+        Insert 1000 new elements on the beginning of ArrayList needs: 131 Milliseconds
+        Insert 1000 new elements on the beginning of LinkedList needs: 15 Milliseconds
 
         ----- Inserting new 1000 elements on the middle -----
-        Insert 1000 new elements on the middle ArrayList needs: 17 Milliseconds
-        Insert 1000 new elements on the middle LinkedList needs: 256 Milliseconds
+        Insert 1000 new elements on the middle of ArrayList needs: 89 Milliseconds
+        Insert 1000 new elements on the middle of LinkedList needs: 649 Milliseconds
 
         ------- Inserting new 1000 elements on the end -------
-        Insert 1000 new elements on the end ArrayList needs: 0 Milliseconds
-        Insert 1000 new elements on the end LinkedList needs: 0 Milliseconds
+        Insert 1000 new elements on the end of ArrayList needs: 1 Milliseconds
+        Insert 1000 new elements on the end of LinkedList needs: 0 Milliseconds
 
-        ------- Updating new 1000 elements on the begin -------
-        Update 1000 new elements on the begin ArrayList needs: 0 Milliseconds
-        Update 1000 new elements on the begin LinkedList needs: 1 Milliseconds
+        ------- Updating new 1000 elements on the beginning -------
+        Update 1000 new elements on the beginning of ArrayList needs: 0 Milliseconds
+        Update 1000 new elements on the beginning of LinkedList needs: 2 Milliseconds
 
         ------- Updating new 1000 elements on the middle -------
-        Update 1000 new elements on the middle ArrayList needs: 0 Milliseconds
-        Update 1000 new elements on the middle LinkedList needs: 278 Milliseconds
+        Update 1000 new elements on the middle of ArrayList needs: 1 Milliseconds
+        Update 1000 new elements on the middle of LinkedList needs: 335 Milliseconds
 
         ------- Updating new 1000 elements on the end -------
-        Update 1000 new elements on the end ArrayList needs: 0 Milliseconds
-        Update 1000 new elements on the end LinkedList needs: 4 Milliseconds
+        Update 1000 new elements on the end of ArrayList needs: 1 Milliseconds
+        Update 1000 new elements on the end of LinkedList needs: 2 Milliseconds
 
-        ------- Deleting new 1000 elements on the begin -------
-        Delete 1000 new elements on the begin ArrayList needs: 66 Milliseconds
-        Delete 1000 new elements on the begin LinkedList needs: 3 Milliseconds
+        ------- Deleting new 1000 elements on the beginning -------
+        Delete 1000 new elements on the beginning of ArrayList needs: 49 Milliseconds
+        Delete 1000 new elements on the beginning of LinkedList needs: 4 Milliseconds
 
         ------- Deleting new 1000 elements on the middle -------
-        Delete 1000 new elements on the middle ArrayList needs: 22 Milliseconds
-        Delete 1000 new elements on the middle LinkedList needs: 256 Milliseconds
+        Delete 1000 new elements on the middle of ArrayList needs: 32 Milliseconds
+        Delete 1000 new elements on the middle of LinkedList needs: 221 Milliseconds
 
         ------- Deleting new 1000 elements on the end -------
-        Delete 1000 new elements on the end ArrayList needs: 0 Milliseconds
-        Delete 1000 new elements on the end LinkedList needs: 4 Milliseconds
+        Delete 1000 new elements on the end of ArrayList needs: 1 Milliseconds
+        Delete 1000 new elements on the end of LinkedList needs: 2 Milliseconds
 
         */
 
